@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="">Number1</label>
+        <input type="text" id="a">
+        <button id="b">Counting</button>
+
+
+        <!-- Table -->
+
+        
+        <label for="">Number2</label>
+        <input type="text" id="f">
+        <button id="g">Table</button>
+    </form>
+
+    <script>
+        var a = document.querySelector('#b')
+
+        a.addEventListener('click', function () {
+            var b = document.querySelector('#a').value
+
+            for (var c = b; c >= 1; c--) {
+                document.write(c, "<br>")
+
+            }
+            return false
+        })
+
+
+        var h = document.querySelector('#g')
+
+        h.addEventListener('click', function () {
+            var i = document.querySelector('#f').value
+
+            for (var l = 1; l <= 10; l++) {
+                document.write(i, " x ", l, " = ", i * l, "<br>")
+            }
+
+
+            return false
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
